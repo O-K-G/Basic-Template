@@ -1,0 +1,37 @@
+version: '3.8'
+services:
+  database:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    ports:
+      - 27017:27017
+    volumes:
+      - database:/data/db
+  backend:
+    build: ./backend/src
+    restart: always
+    command: node backend/src/server.tsx
+    volumes:
+      - .:/usr/backend/src/
+      - /usr/backend/src/node_modules
+    ports:
+      - "3001:3000"
+    depends_on:
+      - database
+  frontend:
+    build: ./frontend
+    restart: always
+    command: npm run dev --prefix \frontend
+    volumes:
+      - ./:/usr/frontend
+      - /usr/frontend/node_modules
+      - /usr/frontend/.next
+    ports:
+      - "3002:3000"
+    depends_on:
+      - backend
+volumes:
+  database:
