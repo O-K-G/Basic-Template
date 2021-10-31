@@ -13,7 +13,7 @@ services:
   backend:
     build: ./backend/src
     restart: always
-    command: node backend/src/server.tsx
+    command: npm run dev --prefix \backend/src
     volumes:
       - .:/usr/backend/src/
       - /usr/backend/src/node_modules
