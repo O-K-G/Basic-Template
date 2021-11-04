@@ -13,6 +13,8 @@ services:
   backend:
     build: ./backend/src
     restart: always
+    environment:
+      NEXT_PUBLIC_ENV: ${NEXT_PUBLIC_ENV}
     command: npm run dev --prefix \backend/src
     volumes:
       - .:/usr/backend/src/
@@ -24,6 +26,8 @@ services:
   frontend:
     build: ./frontend
     restart: always
+    environment:
+      NEXT_PUBLIC_ENV: ${NEXT_PUBLIC_ENV}
     command: npm run dev --prefix \frontend
     volumes:
       - ./:/usr/frontend
