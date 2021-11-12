@@ -43,7 +43,8 @@ const Home: NextPage = ({ ENV }: any) => {
           8. Run 'sudo service docker start'<br></br>
           9. Install Docker Compose V2. https://docs.docker.com/compose/cli-command/#install-on-linux<br></br>
           10. Manage Docker as a non-root user. https://docs.docker.com/engine/install/linux-postinstall/<br></br>
-          11. Clone a project to a folder within Ubuntu and Docker Compose Up.
+          11. Add a bit of code at the end of ~/.bashrc to see the current branch. https://thucnc.medium.com/how-to-show-current-git-branch-with-colors-in-bash-prompt-380d05a24745<br></br>
+          12. Clone a project to a folder within Ubuntu and Docker Compose Up.
         </p>
 
       </section>
