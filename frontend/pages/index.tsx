@@ -23,7 +23,7 @@ const Home: NextPage = ({ ENV }: any) => {
 
       <section>
         <h3 className={classes.titles}>Develop in Ubuntu within Windows:</h3>
-        <p>1. Install WIndows features Windows subsystem for Linux. Virtual Machine Platform.<br></br>
+        <p>1. Install Windows features: Windows subsystem for Linux. Virtual Machine Platform.<br></br>
           2. Update Windows. <br></br>
           3. Add in Windows' {"Users/<user name/"} the file .wslconfig:<br></br>
           ---------------<br></br>
