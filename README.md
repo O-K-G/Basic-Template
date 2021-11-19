@@ -1,11 +1,11 @@
-This is a skeletal Docker\Next.js\Express.js\MongoDB project.
+A basic template for a Next.js, Express.js, Mongo, TypeScript and Docker Web App
 
 ## Getting Started
 
 In the command line:
 
-Write "docker-compose up" when in development.
-Write "ENV=prod docker-compose up" when in production.
+Run "docker-compose up" when in development.
+Run "ENV=prod docker-compose up" when in production.
 
 Backend: localhost:3001 .
 Frontend: localhost:3000 .
