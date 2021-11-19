@@ -1,3 +1,70 @@
-.titles {
-  text-decoration: underline;
+.mainTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+.titleText {
+  margin-bottom: 0.25rem;
+}
+
+.divider {
+  width: 100%;
+  border-bottom: 1px solid white;
+  margin-bottom: 0.5rem;
+}
+
+.code, .listCode {
+  background-color: #2b2b2b;
+  border: 1px solid #555555;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #ffffff;
+  text-align: left;
+}
+.code:focus {
+  outline: 2px solid #d5d1fa;
+  outline-offset: 0.1rem;
+  
+}
+.code:hover {
+  background-color: #5ca8ff;
+}
+.code:active {
+  background-color: #c7c7c7;
+}
+
+.listCode {
+  margin: 1rem 0.25rem 1rem 0.25rem;
+}
+
+.listCode:focus {
+  outline: 2px solid #d5d1fa;
+  outline-offset: 0.1rem;
+  
+}
+.listCode:hover {
+  background-color: #5ca8ff;
+}
+.listCode:active {
+  background-color: #c7c7c7;
+}
+
+.caption {
+  border-top: 3px dotted white;
+  border-bottom: 3px dotted white;
+  width: fit-content;
+  padding: 0.25rem 0 0.50rem 0;
 }
