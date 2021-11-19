@@ -17,7 +17,7 @@ const Home: NextPage = ({ ENV }: any) => {
           <div className={title}>
             <h1 className={titleText}>A basic template for a Next.js, Express.js, Mongo, and Docker Web App</h1>
             <div className={divider} />
-            <h5>Last update: November 19th 2021</h5>
+            <h5>*Last update: November 19th 2021</h5>
           </div>
         </div>
       </main>
