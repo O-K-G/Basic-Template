@@ -15,7 +15,7 @@ const Home: NextPage = ({ ENV }: any) => {
       <main>
         <div className={mainTitle}>
           <div className={title}>
-            <h1 className={titleText}>A basic template for a Next.js, Express.js, Mongo, and Docker Web App</h1>
+            <h1 className={titleText}>A basic template for a Next.js, Express.js, Mongo, TypeScript and Docker Web App</h1>
             <div className={divider} />
             <h5>Last update: November 19th 2021</h5>
           </div>
@@ -56,7 +56,7 @@ const Home: NextPage = ({ ENV }: any) => {
           <li>Install Docker Compose V2. <a target="_blank" href="https://docs.docker.com/compose/cli-command/#install-on-linux" rel="noopener noreferrer">https://docs.docker.com/compose/cli-command/#install-on-linux</a></li>
           <li>Manage Docker as a non-root user. <a target="_blank" href="https://docs.docker.com/engine/install/linux-postinstall" rel="noopener noreferrer">https://docs.docker.com/engine/install/linux-postinstall</a></li>
           <li>Add a bit of code at the end of ~/.bashrc to see the current branch in the terminal. <a target="_blank" href="https://thucnc.medium.com/how-to-show-current-git-branch-with-colors-in-bash-prompt-380d05a24745" rel="noopener noreferrer">https://thucnc.medium.com/how-to-show-current-git-branch-with-colors-in-bash-prompt-380d05a24745</a></li>
-          <li>Clone a project to a folder <b>within Ubuntu</b> and Docker Compose Up</li>
+          <li>Clone a project to a folder <b>within Ubuntu</b>, run <button onClick={copyToClipboard} className={listCode}>docker compose up</button>or<button onClick={copyToClipboard} className={listCode}>ENV=prod docker compose up</button>, and edit your code <b>within</b> the Docker container.</li>
         </ol>
       </section>
 
