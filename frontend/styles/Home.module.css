@@ -68,3 +68,8 @@
   width: fit-content;
   padding: 0.25rem 0 0.50rem 0;
 }
+
+.list {
+  padding-left: 0;
+  list-style-position: inside;
+}

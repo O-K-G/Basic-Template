@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import classes from "../styles/Home.module.css";
-const { mainTitle, title, titleText, divider, code, listCode, caption } = classes;
+const { mainTitle, title, titleText, divider, code, listCode, caption, list } = classes;
 
 const Home: NextPage = ({ ENV }: any) => {
 
@@ -17,7 +17,7 @@ const Home: NextPage = ({ ENV }: any) => {
           <div className={title}>
             <h1 className={titleText}>A basic template for a Next.js, Express.js, Mongo, TypeScript and Docker Web App</h1>
             <div className={divider} />
-            <h5>Last update: November 19th 2021</h5>
+            <h5>Last update: November 20<sup>th</sup> 2021</h5>
           </div>
         </div>
       </main>
@@ -35,7 +35,7 @@ const Home: NextPage = ({ ENV }: any) => {
 
       <section>
         <h3>Quick Guide - Develop with Ubuntu inside Windows:</h3>
-        <ol>
+        <ol className={list}>
           <li>Install the following Windows features: <b>Windows Subsystem for Linux</b> (WSL), <b>Virtual Machine Platform</b>.</li> <a target="_blank" href="https://www.windowscentral.com/how-manage-optional-features-windows-10" rel="noopener noreferrer">https://www.windowscentral.com/how-manage-optional-features-windows-10</a>
           <li>Update Windows.</li>
           <li>Add in the folder '<b>{"Users/<user name>/"}</b>' (probably in your main drive) the file '<b>.wslconfig</b>' with the following Text:<br></br>
@@ -51,12 +51,15 @@ const Home: NextPage = ({ ENV }: any) => {
           <li>Install the Microsoft Store Ubuntu app and open it.</li>
           <li>Update/upgrade Ubuntu. <a target="_blank" href="https://www.cyberciti.biz/faq/upgrade-update-ubuntu-using-terminal" rel="noopener noreferrer">https://www.cyberciti.biz/faq/upgrade-update-ubuntu-using-terminal</a></li>
           <li>Install Node in Linux. <a target="_blank" href="https://github.com/nodesource/distributions/blob/master/README.md" rel="noopener noreferrer">https://github.com/nodesource/distributions/blob/master/README.md</a></li>
-          <li>Instal Docker + repo. <a target="_blank" href="https://docs.docker.com/engine/install/ubuntu" rel="noopener noreferrer">https://docs.docker.com/engine/install/ubuntu</a></li>
+          <li>Update NPM: <button onClick={copyToClipboard} className={listCode}>npm install -g npm@latest</button>.</li>
+          <li>Update Git and the repo as a Super User: <button onClick={copyToClipboard} className={listCode}>sudo -i</button> or <button onClick={copyToClipboard} className={listCode}>sudo -s</button>. <a target="_blank" href="https://git-scm.com/download/linux" rel="noopener noreferrer">https://git-scm.com/download/linux</a></li>
+          <li>Install Docker + repo. <a target="_blank" href="https://docs.docker.com/engine/install/ubuntu" rel="noopener noreferrer">https://docs.docker.com/engine/install/ubuntu</a></li>
           <li>Run <button onClick={copyToClipboard} className={listCode}>sudo service docker start</button>.</li>
           <li>Install Docker Compose V2. <a target="_blank" href="https://docs.docker.com/compose/cli-command/#install-on-linux" rel="noopener noreferrer">https://docs.docker.com/compose/cli-command/#install-on-linux</a></li>
           <li>Manage Docker as a non-root user. <a target="_blank" href="https://docs.docker.com/engine/install/linux-postinstall" rel="noopener noreferrer">https://docs.docker.com/engine/install/linux-postinstall</a></li>
           <li>Add a bit of code at the end of ~/.bashrc to see the current branch in the terminal. <a target="_blank" href="https://thucnc.medium.com/how-to-show-current-git-branch-with-colors-in-bash-prompt-380d05a24745" rel="noopener noreferrer">https://thucnc.medium.com/how-to-show-current-git-branch-with-colors-in-bash-prompt-380d05a24745</a></li>
-          <li>Clone a project to a folder <b>within Ubuntu</b>, run <button onClick={copyToClipboard} className={listCode}>docker compose up</button>or<button onClick={copyToClipboard} className={listCode}>ENV=prod docker compose up</button>, and edit your code <b>within</b> the Docker container.</li>
+          <li>Clone a project to a folder <b>within Ubuntu</b>, and set one of the credentials helpers, like 'store' for example. <a target="_blank" href="https://git-scm.com/docs/git-credential-store" rel="noopener noreferrer">https://git-scm.com/docs/git-credential-store</a></li>
+          <li>Run <button onClick={copyToClipboard} className={listCode}>docker compose up</button>or<button onClick={copyToClipboard} className={listCode}>ENV=prod docker compose up</button>, and edit your code <b>within</b> the Docker container.</li>
         </ol>
       </section>
 
