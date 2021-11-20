@@ -25,7 +25,7 @@ const Home: NextPage = ({ ENV }: any) => {
 
       <section>
         <div className={title}>
-          <h3 className={titleText}>To run this page in localhost:3000, simply clone or download it from <a target="_blank" href="https://github.com/O-K-G/project" rel="noopener noreferrer">https://github.com/O-K-G/project</a>, and in the command line:</h3>
+          <h3 className={titleText}>To run this page in localhost:3000, simply clone or download it from <a target="_blank" href="https://github.com/O-K-G/Basic-Template" rel="noopener noreferrer">https://github.com/O-K-G/Basic-Template</a>, and in the command line:</h3>
           <div className={divider} />
         </div>
         <p>Run&nbsp;<button onClick={copyToClipboard} className={code}>docker compose up</button>&nbsp;when in <b>development</b>.</p>
