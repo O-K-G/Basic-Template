@@ -16,6 +16,7 @@ const Home: NextPage = ({ ENV }: any) => {
         <div className={mainTitle}>
           <div className={title}>
             <h1 className={titleText}>A basic template for a Next.js, Express.js, Mongo, TypeScript and Docker Web App</h1>
+            <h3>This is just to save me time on future projects and for my own personal interest. If you use it, use at your own risk.</h3>
             <div className={divider} />
             <h5>Last update: November 20<sup>th</sup> 2021</h5>
           </div>
